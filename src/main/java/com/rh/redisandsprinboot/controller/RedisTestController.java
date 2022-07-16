@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 整合redis
+ */
 @RestController
 public class RedisTestController {
 
@@ -20,7 +23,7 @@ public class RedisTestController {
     @RequestMapping("redisTest")
     public String testRedis(){
         redisTemplate.opsForValue().set("name","lucy");
-
+        System.out.println("测试");
         return (String) redisTemplate.opsForValue().get("name");
     }
 
