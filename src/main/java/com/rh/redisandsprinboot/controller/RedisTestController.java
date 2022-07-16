@@ -24,6 +24,7 @@ public class RedisTestController {
     public String testRedis(){
         redisTemplate.opsForValue().set("name","lucy");
         System.out.println("测试");
+        System.out.println("测试hot-fix");
         return (String) redisTemplate.opsForValue().get("name");
     }
 
