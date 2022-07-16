@@ -23,8 +23,8 @@ public class RedisTestController {
     @RequestMapping("redisTest")
     public String testRedis(){
         redisTemplate.opsForValue().set("name","lucy");
-        System.out.println("测试");
-        System.out.println("测试hot-fix");
+        System.out.println("测试master");
+        System.out.println("测试hot-fix1");
         return (String) redisTemplate.opsForValue().get("name");
     }
 
