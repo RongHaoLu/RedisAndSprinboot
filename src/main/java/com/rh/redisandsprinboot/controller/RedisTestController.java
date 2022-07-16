@@ -12,7 +12,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 整合redis
+ * 整合redis-test
  */
 @RestController
 public class RedisTestController {
